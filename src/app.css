@@ -1,0 +1,41 @@
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans'); */
+
+body {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+h1, h2, h3, h4, h5, .light-text {
+    font-weight: 300;
+}
+
+.bold, strong, b {
+    font-weight: 700;
+}
+
+a.btn, button.btn {
+    background-color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px 8px;
+    border: 1px solid #00A3E0;
+    text-decoration: none;
+    color: #00A3E0;
+}
+
+a.btn-loud, button.btn-loud {
+    background-color: #00A3E0;
+    text-decoration: none;
+    color: #fff;
+}
+
+#mainNav a:not(:last-child) {
+    margin-right: 10px;
+}
+
+#mainBody {
+    margin-top: 30px;
+}
+

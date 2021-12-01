@@ -1,0 +1,14 @@
+<template>
+  <h1>
+    Binding 
+  </h1>
+  <p>
+    <h3>model.param1: <strong>${model.param1}</strong></h3>
+    <button class="btn btn-loud" click.delegate="changeModel()">Change this.model.param1</button>
+  </p>
+  </h1>
+  <p>
+    <h3>otherModel.nestedProperty: <span class="bold" innerhtml.bind="otherModel.nestedProperty"></span></h3>
+    <button class="btn btn-loud" click.delegate="changeOtherModel()">Change this.otherModel.nestedProperty</button>
+  </p>
+</template>
