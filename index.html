@@ -2,13 +2,54 @@
 
 <html>
   <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.9em;
+    }
+    
+    h1, h2, h3, h4, h5, .light-text {
+        font-weight: 300;
+    }
+
+    a {
+      background-color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      padding: 4px 8px;
+      border: 1px solid #00A3E0;
+      text-decoration: none;
+      color: #00A3E0;
+      margin-right:20px;;
+  }
+  
+    </style>
   </head>
 
   <body>
-    loading...
-    <script src="./aurelia.umd.js"></script>
-    <script>console.log('au', au.DOM.createTemplateFromMarkup);</script>
-    <script src="./main.js"></script>
+    <content>
+      <section>
+        <p>
+          Using vanilla ECMA 6 JS without babel or any transpiling.  So, this means no 
+          @decorators which is why you'll see me using <code>static inject = [object];</code>
+          rather than <code>@inject(object)</code>. Other than this, the JS should look 
+          just like it does in our SPAs.
+          </p>
+          <p>
+            To play, just visit "Playground" link above.  I also have an example of the property observer for "observing" nested properties, just click "Property Observer" link above.
+          </p>
+      </section>
+
+      <section>
+        <h2>Choose your path</h2>
+        <a href="./examples/withroutes">Route Views</a>
+        <a href="./examples/singleview">Single View (no routes)</a>
+      </section>
+    </content>
   </body>
 </html>

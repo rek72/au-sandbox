@@ -1,6 +1,9 @@
 <template>
   <require from='./app.css'></require>
   <nav id="mainNav">
+    <a href="/" class="btn">
+      Examples Home
+    </a>
     <a repeat.for="nav of router.navigation" route-href.one-time="nav.config.name" class="btn ${nav.isActive ? 'active btn-loud' : ''}">
       ${nav.title}
     </a>

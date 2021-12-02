@@ -1,0 +1,7 @@
+#mainNav a:not(:last-child) {
+    margin-right: 10px;
+}
+
+#mainBody {
+    margin-top: 30px;
+}

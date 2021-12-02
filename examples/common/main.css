@@ -1,5 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans'); */
-
 body {
     font-family: 'Open Sans';
     font-style: normal;
@@ -30,12 +28,3 @@ a.btn-loud, button.btn-loud {
     text-decoration: none;
     color: #fff;
 }
-
-#mainNav a:not(:last-child) {
-    margin-right: 10px;
-}
-
-#mainBody {
-    margin-top: 30px;
-}
-

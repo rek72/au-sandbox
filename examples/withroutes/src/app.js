@@ -46,9 +46,9 @@ export class App {
 
    configureRouter(config, router) {
       config.map([
-         { route: ['', 'home'], name: 'home', moduleId: window.sandboxHelper.srcPath('views/home.js'), title: 'Home', nav: true },
-         { route: 'playground', name: 'playground', moduleId: window.sandboxHelper.srcPath('views/playground.js'), title: 'Playground', nav: true },
-         { route: 'propertyobserver', name: 'propertyobserver', moduleId: window.sandboxHelper.srcPath('views/propertyObserver/index.js'), title: 'Property Observer', nav: true }
+         { route: ['', 'home'], name: 'home', moduleId: window.sandboxHelper.buildPath('views/home.js'), title: 'Routes Home', nav: true },
+         { route: 'playground', name: 'playground', moduleId: window.sandboxHelper.buildPath('views/playground.js'), title: 'Playground', nav: true },
+         { route: 'propertyobserver', name: 'propertyobserver', moduleId: window.sandboxHelper.buildPath('views/propertyObserver/index.js'), title: 'Property Observer', nav: true }
       ]);
 
       this.router = router;
